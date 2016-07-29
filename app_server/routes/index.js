@@ -1,12 +1,14 @@
 var express = require('express');
 var router = express.Router();
-var ctrlMain = require('../controllers/main');
+var ctrlLocations = require('../controllers/locations');
+var ctrlOthers = require('../controllers/others');
 
-var homepageController = function(req, res){
-    res.render('index', {title: 'Loc8r'});
-};
+/* Pages that use the LOCATIONS collection */
+router.get('/', ctrlLocations.homeList);
+router.get('/location', ctrlLocations.locationInfo);
+router.get('/location/review/new', ctrlLocations.addReview);
 
-/* GET home page. */
-router.get('/', homepageController);
+/* Pages that use the OTHERS collection */
+router.get('/about', ctrlOthers.about);
 
 module.exports = router;
