@@ -1,5 +1,69 @@
 extends layout
 
 block content
-    h1= title
-    p.text-success Welcome to #{title}
+    #banner.page-header
+        .row
+            .col-lg-6
+                h1
+                | Loc8r
+                small &nbsp; Find places to work with wifi near you!
+    .row
+        .col-xs-12.col-sm-8
+            .row.list-group
+                .col-xs-12.list-group-item
+                    h4
+                        a(href="/location") Starbucks
+                        small &nbsp;
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star-empty
+                        span.badge.pull-right.badge-default 1.7 miles
+                    p.address 125 Ten-Ten Hwy, Apex, NC, 27539
+                    p
+                        span.label.label-warning Hot Drinks
+                        | &nbsp;
+                        span.label.label-warning Food
+                        | &nbsp;
+                        span.label.label-warning Premium WiFi
+                        | &nbsp;
+                .col-xs-12.list-group-item
+                    h4
+                        a(href="/location") Dunkin Donuts
+                        small &nbsp;
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star-empty
+                            span.glyphicon.glyphicon-star-empty
+                            span.glyphicon.glyphicon-star-empty
+                        span.badge.pull-right.badge-default 2.3 miles
+                    p.address 3080 Kildaire Farm Road, Cary, NC, 27511
+                    p
+                        span.label.label-warning Donuts
+                        | &nbsp;
+                        span.label.label-warning Coffee
+                        | &nbsp;
+                        span.label.label-warning WiFi
+                        | &nbsp;
+                .col-xs-12.list-group-item
+                    h4
+                        a(href="/location") Mickey D's
+                        small &nbsp;
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star-empty
+                        span.badge.pull-right.badge-default 2.5 miles
+                    p.address 3000 Kildaire Farm Road, Cary, NC, 27511
+                    p
+                        span.label.label-warning Food
+                        | &nbsp;
+                        span.label.label-warning Drinks
+                        | &nbsp;
+                        span.label.label-warning Extreme WiFi
+                        | &nbsp;
+        .col-xs-12.col-sm-4
+            p.lead
+                | Looking for WiFi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, donuts, or a pint? Let Loc8r help you find the place you're looking for!
