@@ -40,7 +40,8 @@ module.exports.homeList = function(req, res){
                 ],
                 distance: "4.8 miles"
             }
-        ]
+        ],
+        sidebar: "Looking for WiFi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, donuts, or a pint? Let Loc8r help you find the place you're looking for!"
     };
     res.render('locations-list', pageContent);
 };
