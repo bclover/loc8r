@@ -108,7 +108,10 @@ module.exports.locationInfo = function(req, res){
 
 module.exports.addReview = function(req, res){
     var addReviewContent = {
-        title: "Add Review"
+        title: "Loc8r",
+        pageHeader: {
+            title: "Review Starbucks"
+        }
     };
     res.render('locations-review-form', addReviewContent);
 };
