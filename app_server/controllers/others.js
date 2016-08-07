@@ -1,3 +1,7 @@
 module.exports.about = function(req, res){
-    res.render('generic-text', {title: 'About'});
+    var aboutContent = {
+        title: 'About Loc8r',
+        content: 'Loc8r was created to help people find places to sit down and get a bit of work done.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim lectus ac tempus congue. Vestibulum sed iaculis lorem, ac blandit velit. Cras consequat quam eu ex hendrerit scelerisque. Nullam elementum arcu a lectus congue, vel aliquam nisl rhoncus. Cras cursus eget purus ut eleifend. Aenean facilisis, purus at vulputate luctus, risus nisl convallis diam, id porttitor arcu ex non ex. Curabitur vitae ex et lorem vestibulum dapibus. Sed luctus sapien eget tortor suscipit venenatis. Nunc sed est egestas, scelerisque nisl eget, ornare nulla. Fusce finibus erat dignissim viverra pretium. Suspendisse at odio id dolor dictum auctor vulputate a ligula. Nulla rhoncus condimentum eros, ut venenatis justo elementum vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat leo tristique, convallis sem ac, aliquam erat.\n\nProin efficitur, ex et pulvinar vehicula, dui neque volutpat nisl, sed hendrerit erat velit at nisi. Donec a lorem ipsum. Donec faucibus nec lectus at viverra. Cras tempor mauris mi, ut placerat neque condimentum quis. Ut ligula turpis, feugiat et consectetur in, placerat vitae odio. Curabitur nec quam tortor. Praesent vel lectus eget sem tincidunt rutrum. Pellentesque lacinia sapien lacus. Vivamus euismod laoreet imperdiet. Quisque dignissim condimentum mi, lacinia commodo lacus faucibus vel. Cras leo metus, tempor ut consequat non, sodales vel diam.'
+    };
+    res.render('generic-text', aboutContent);
 };
