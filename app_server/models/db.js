@@ -42,3 +42,6 @@ process.once('SIGTERM', function() {
         process.exit(0);
     });
 });
+
+//Bring in Schemas so they're available to the app
+require('./locations');
