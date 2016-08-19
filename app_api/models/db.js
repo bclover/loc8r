@@ -5,12 +5,13 @@ var dbURI = 'mongodb://localhost/Loc8r';
 //to point to the live database instead of the local one
 if (process.env.NODE_ENV === 'production') {
     dbURI = process.env.MONGOLAB_URI;
+    console.log("dbURI:" + dbURI)
 }
 mongoose.connect(dbURI);
 
 var gracefulShutdown = function(msg, callback){
     mongoose.connection.close(function() {
-       console.log('\rMongoose disconnected via => ' + msg);
+        console.log('\rMongoose disconnected via => ' + msg);
         callback();
     });
 };
